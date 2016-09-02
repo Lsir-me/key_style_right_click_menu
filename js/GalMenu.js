@@ -62,11 +62,13 @@
                     if ($("#gal").hasClass("open")) {
                         $(".circle").removeClass("open");
                         $("#overlay").hide();
+						$(".GalMenu").css("pointer-events","none");
                         audio.pause();
                         audio.currentTime = 0
                     } else {
                         $(".circle").addClass("open");
                         $("#overlay").show();
+						$(".GalMenu").css("pointer-events","auto");
                         audio.play()
                     }
                 })
