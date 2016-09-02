@@ -50,7 +50,7 @@
                     var audio = $("#audio")[0];
                     var add = 150;
                     var top = Coords.clientY - add,
-                    left = ($('body')[0] === e.target) ? Coords.clickX + add: Coords.clientX - add;
+                    left = ($('body')[0] === e.target) ? Coords.clickX - add: Coords.clientX - add;
                     $menu.css({
                         top: top + 'px',
                         left: left + 'px',
