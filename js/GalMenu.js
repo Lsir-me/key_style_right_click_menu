@@ -26,7 +26,10 @@
                             }
                         });
                         $(".circle").removeClass("open");
-                        $("#overlay").hide()
+                        $("#overlay").hide();
+                        $(".GalMenu").css("pointer-events","none");
+                        audio.pause();
+                        audio.currentTime = 0
                     }
                 });
                 $this.on('contextmenu',
