@@ -26,7 +26,8 @@
                             }
                         });
                         $(".circle").removeClass("open");
-                        $("#overlay,.GalMenu").hide();
+                        $("#overlay").hide();
+                        $(".GalMenu").delay(400).hide(0);
                         audio.pause();
                         audio.currentTime = 0
                     }
@@ -63,7 +64,8 @@
                     });
                     if ($("#gal").hasClass("open")) {
                         $(".circle").removeClass("open");
-                        $("#overlay,.GalMenu").hide();
+                        $("#overlay").hide();
+                        $(".GalMenu").delay(400).hide(0);
                         audio.pause();
                         audio.currentTime = 0
                     } else {
