@@ -5,7 +5,7 @@
             stay_open: false
         },
         init: function(options) {
-            var o = options,
+            var o = options, audio = $("#audio")[0];
             $this = $(this);
             $this.each(function(i) {
                 var $this = $(this),
@@ -47,7 +47,6 @@
                             $(this).css('display', 'none')
                         }
                     });
-                    var audio = $("#audio")[0];
                     var add = 150;
                     var top = Coords.clientY - add,
                     left = ($('body')[0] === e.target) ? Coords.clickX - add: Coords.clientX - add;
@@ -120,12 +119,3 @@
         }
     }
 })(jQuery);
-String.prototype.removeWS = function() {
-    return this.toString().replace(/\s/g, '')
-};
-String.prototype.pF = function() {
-    return parseFloat(this)
-};
-Number.prototype.pF = function() {
-    return parseFloat(this)
-};
